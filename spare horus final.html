@@ -1,0 +1,317 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spare Hour: volunteering ideas for students</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,0..100,0..1&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EADBC8; --surface:#F7EFE3; --ink:#3B2417; --muted:#6B4E3D; --line:#CDB59B;
+  --teal:#5C3A21; --sun:#E3A857; --coral:#B8481F; --sky:#DCC6A9;
+  --on-teal:#F7EFE3;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#1E130C;--surface:#2C1D13;--ink:#F1E3D0;--muted:#C4AA90;--line:#4A3626;--teal:#D9A66B;--on-teal:#1E130C;--sky:#4A3626;--coral:#E8875B}
+}
+:root[data-theme="dark"]{--bg:#1E130C;--surface:#2C1D13;--ink:#F1E3D0;--muted:#C4AA90;--line:#4A3626;--teal:#D9A66B;--on-teal:#1E130C;--sky:#4A3626;--coral:#E8875B}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:1.0625rem;line-height:1.55}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-variation-settings:'SOFT' 100,'WONK' 1;line-height:1.08;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* top menu */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1.5px solid var(--line)}
+.bar{display:flex;align-items:center;gap:8px;min-height:62px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.35rem;text-decoration:none;margin-right:auto;display:flex;align-items:center;gap:8px}
+.logo i{font-style:normal;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--sun);color:#3B2417;font-size:1rem}
+.menu{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.menu a,.menu .dd-btn{font:inherit;font-weight:500;text-decoration:none;padding:8px 14px;border-radius:999px;border:0;background:none;color:var(--ink);cursor:pointer;display:block}
+.menu a:hover,.menu .dd-btn:hover{background:var(--sky)}
+.menu a.active{background:var(--ink);color:var(--bg)}
+.dd{position:relative}
+.dd-list{position:absolute;top:calc(100% + 6px);right:0;min-width:220px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:6px;list-style:none;margin:0;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.dd-list[hidden]{display:none}
+.dd-list button{font:inherit;width:100%;text-align:left;padding:9px 12px;border:0;border-radius:9px;background:none;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:12px}
+.dd-list button:hover{background:var(--sky)}
+.dd-list small{color:var(--muted)}
+.icon-btn{font:inherit;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:1.1rem}
+.burger{display:none}
+@media (max-width:820px){
+  .burger{display:block}
+  .menu{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--bg);border-bottom:1.5px solid var(--line);padding:10px 20px 16px}
+  .menu.open{display:flex}
+  .menu a,.menu .dd-btn{border-radius:10px;text-align:left;width:100%}
+  .dd-list{position:static;box-shadow:none;margin-top:4px}
+}
+/* faq */
+.faq{margin-top:40px}
+.faq h3{font-size:1.6rem;margin-bottom:12px}
+.faq details{border-top:1.5px solid var(--line);padding:14px 4px}
+.faq details:last-child{border-bottom:1.5px solid var(--line)}
+.faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:10px 0 0;color:var(--muted);max-width:62ch}
+
+/* hero */
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(2.6rem,8.5vw,6rem);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero h1 .hl{background:linear-gradient(transparent 62%,var(--sun) 62% 92%,transparent 92%);padding:0 .08em}
+.hero p{max-width:52ch;color:var(--muted);font-size:1.2rem;margin:20px 0 28px}
+.ask{font-family:Caveat,cursive;font-weight:700;font-size:1.9rem;line-height:1;margin:0 0 12px;color:var(--coral)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font:inherit;font-weight:500;padding:10px 18px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .15s,color .15s,transform .15s}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+/* ideas */
+.board{padding:28px 0 56px}
+.board-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px}
+.board h2{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800}
+.count{color:var(--muted);margin:0}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chip.sm{padding:6px 14px;font-size:.95rem;border-width:1.5px;border-color:var(--line)}
+.chip.sm[aria-pressed="true"]{border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:6px 22px 6px 22px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;position:relative}
+.card::before{content:"";position:absolute;left:20px;top:-7px;width:44px;height:14px;border-radius:3px;background:var(--tape,var(--sun));opacity:.9}
+.card h3{font-size:1.4rem;font-weight:800;letter-spacing:-.01em;margin-top:6px}
+.card p{margin:0;color:var(--muted);font-size:1rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px;font-size:.88rem}
+.meta span{background:var(--sky);color:var(--ink);padding:2px 10px;border-radius:999px}
+.gain{font-size:.92rem;border-top:1.5px dashed var(--line);padding-top:10px;margin-top:auto}
+.add{font:inherit;font-weight:700;padding:9px 14px;border-radius:10px;border:2px solid var(--teal);background:transparent;color:var(--teal);cursor:pointer;transition:background .15s,color .15s}
+.add:hover,.add[aria-pressed="true"]{background:var(--teal);color:var(--on-teal)}
+.empty{grid-column:1/-1;padding:30px;border:2px dashed var(--line);border-radius:12px;color:var(--muted)}
+
+/* plan */
+.plan{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:5;margin:0 auto;max-width:640px;background:var(--ink);color:var(--bg);border-radius:16px;padding:14px 18px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.plan[hidden]{display:none}
+.plan b{font-family:Fraunces,Georgia,serif;font-size:1.25rem}
+.plan button{font:inherit;font-weight:700;border:0;border-radius:10px;padding:8px 14px;background:var(--sun);color:#3B2417;cursor:pointer}
+.plan ul{margin:0;padding:0;list-style:none;flex-basis:100%;font-size:.95rem;opacity:.9}
+
+/* start your own */
+.own{background:var(--teal);color:var(--on-teal);padding:56px 0}
+.own h2{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;max-width:18ch}
+.own>.wrap>p{max-width:56ch;margin:14px 0 30px;font-size:1.1rem}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid currentColor;padding-top:12px}
+.steps li::before{content:"Step " counter(s);display:block;font-weight:700;margin-bottom:4px}
+.steps strong{display:block;font-family:Fraunces,Georgia,serif;font-size:1.3rem;margin-bottom:4px}
+
+/* why */
+.why{padding:56px 0}
+.why h2{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;margin-bottom:24px}
+.why dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px 32px;margin:0}
+.why dt{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.3rem}
+.why dd{margin:4px 0 0;color:var(--muted)}
+.tips{margin-top:40px;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:22px 24px}
+.tips h3{font-size:1.4rem;margin-bottom:10px}
+.tips ul{margin:0;padding-left:1.2em}
+.tips li{margin:6px 0}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem;border-top:1.5px solid var(--line)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#top"><i aria-hidden="true">&#9825;</i>Spare Hour</a>
+    <nav aria-label="Main">
+      <ul class="menu" id="menu">
+        <li><a href="#top" data-s="top">Home</a></li>
+        <li><a href="#ideas" data-s="ideas">Ideas</a></li>
+        <li class="dd">
+          <button type="button" class="dd-btn" id="dd-btn" aria-expanded="false" aria-controls="dd-list">Browse by cause &#9662;</button>
+          <ul class="dd-list" id="dd-list" hidden></ul>
+        </li>
+        <li><a href="#start" data-s="start">Start your own</a></li>
+        <li><a href="#why" data-s="why">Why &amp; FAQ</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="icon-btn" id="theme" aria-label="Switch light or dark theme">&#9680;</button>
+    <button type="button" class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <h1>Got a spare <span class="hl">hour?</span></h1>
+    <p>Someone near you needs exactly that. Pick how much time you have and see ways to use it, from a lunch-break cleanup to a whole term of tutoring.</p>
+    <p class="ask" id="ask-label">How much time do you have?</p>
+    <div class="chips" role="group" aria-labelledby="ask-label" id="time-chips"></div>
+  </div>
+</section>
+
+<main>
+<section class="board" id="ideas">
+  <div class="wrap">
+    <div class="board-head">
+      <h2>Ideas to try</h2>
+      <p class="count" id="count" aria-live="polite"></p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter by cause" id="cause-chips"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<div class="wrap"><aside class="plan" id="plan" hidden aria-live="polite">
+  <span><b id="plan-hours">0 h</b> planned across <span id="plan-n">0</span> ideas</span>
+  <button type="button" id="plan-clear">Clear plan</button>
+  <ul id="plan-list"></ul>
+</aside></div>
+
+<section class="own" id="start">
+  <div class="wrap">
+    <h2>Can't find your thing? Start it.</h2>
+    <p>The best student projects began with one person noticing a gap. You don't need a big team or a budget to begin.</p>
+    <ol class="steps">
+      <li><strong>Spot the need</strong>Ask a teacher, a neighbour or a local charity what they're short of.</li>
+      <li><strong>Find two friends</strong>Three people is enough to run a first session and cover for each other.</li>
+      <li><strong>Get permission</strong>Check with your school or university student office. They often have rooms, insurance and small funds.</li>
+      <li><strong>Run one small test</strong>Do a single afternoon first. Ask people what worked, then repeat.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <h2>What you get back</h2>
+    <dl>
+      <div><dt>Real skills</dt><dd>Teamwork, planning and speaking up. Things exams don't test but employers ask about.</dd></div>
+      <div><dt>New people</dt><dd>You'll meet people from other courses, ages and neighbourhoods.</dd></div>
+      <div><dt>A clearer direction</dt><dd>Trying a field for a few hours is a cheap way to learn if you want to study or work in it.</dd></div>
+      <div><dt>A break from screens</dt><dd>Helping out is a good reset when study stress builds up.</dd></div>
+    </dl>
+    <div class="tips">
+      <h3>Before your first time</h3>
+      <ul>
+        <li>Start small. One hour a week beats a big plan you drop in week three.</li>
+        <li>Ask what the organisation actually needs, instead of what you'd like to do.</li>
+        <li>If you're under 18, check the age rules and tell a parent or teacher where you'll be.</li>
+        <li>Ask for a short reference letter or certificate. It helps with applications later.</li>
+        <li>Say no when you're overloaded. Looking after yourself keeps you able to help.</li>
+      </ul>
+    </div>
+    <div class="faq">
+      <h3>Questions students ask</h3>
+      <details><summary>I'm busy with exams. Is it still worth it?</summary><p>Yes, if you keep it small. One hour a week, or one Saturday a term, is enough to count. Pause during exam weeks and tell the organisation in advance.</p></details>
+      <details><summary>Do I need experience?</summary><p>No. Most organisations train you on the first day. Your willingness to turn up on time matters more than any skill.</p></details>
+      <details><summary>Can I do it from home?</summary><p>Yes. Online tutoring, translating and design work can all be done remotely. Use the "Online &amp; skills" option in the menu.</p></details>
+      <details><summary>Will it help my CV or university application?</summary><p>It can. Write down what you did, how many hours, and what changed because of it. Ask the organiser for a short letter or certificate.</p></details>
+      <details><summary>Is it safe?</summary><p>Choose registered organisations or ones your school knows, never meet strangers alone, and tell someone where you are. Ask about safety rules before you start.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Spare Hour is a starting point. Check local rules and ask an adult or your student office if you're unsure about safety.</div></footer>
+
+<script>
+var TIMES=[{k:"all",l:"Any amount"},{k:"quick",l:"About an hour"},{k:"short",l:"A few hours"},{k:"long",l:"A full day"},{k:"regular",l:"Every week"}];
+var CAUSES=["All causes","Environment","Kids & learning","Older people","Animals","Food","Online & skills"];
+var TIPCOL={"Environment":"#9BAE7A","Kids & learning":"#E3A857","Older people":"#C9704A","Animals":"#C8B08F","Food":"#E3A857","Online & skills":"#9BAE7A"};
+var IDEAS=[
+ {t:"Campus litter sweep",c:"Environment",k:"quick",h:1,w:"On campus",d:"Grab gloves and bags with a few friends and clear one corner of the grounds. Photograph the before and after.",g:"Leadership, organising small groups"},
+ {t:"Plant a school garden bed",c:"Environment",k:"short",h:3,w:"Local",d:"Ask your school for a patch of soil and plant herbs or vegetables the canteen or classes can use.",g:"Project planning, patience"},
+ {t:"River or park cleanup day",c:"Environment",k:"long",h:6,w:"Local",d:"Team up with a local group and spend a day clearing a river bank or park. Bring water and sun protection.",g:"Teamwork, community contacts"},
+ {t:"Homework helper",c:"Kids & learning",k:"regular",h:1,w:"Local school",d:"Spend an hour a week helping younger students with maths or reading. Ask the school how to join.",g:"Explaining ideas, patience"},
+ {t:"Story-time reader",c:"Kids & learning",k:"quick",h:1,w:"Library or school",d:"Read picture books aloud to young children at a library or after-school club.",g:"Public speaking, confidence"},
+ {t:"Science show for kids",c:"Kids & learning",k:"short",h:3,w:"Local school",d:"Plan three safe experiments (a volcano, a rainbow in water) and run them for a primary class.",g:"Teaching, creativity"},
+ {t:"Phone-skills coach",c:"Older people",k:"short",h:2,w:"Community centre",d:"Show older neighbours how to video call family, use maps or spot scam messages.",g:"Clear communication, empathy"},
+ {t:"Weekly visit or call",c:"Older people",k:"regular",h:1,w:"Local or phone",d:"Join a befriending scheme and chat with someone who lives alone. Short and regular is what matters.",g:"Listening, reliability"},
+ {t:"Shopping and errands run",c:"Older people",k:"quick",h:1,w:"Neighbourhood",d:"Offer to pick up groceries or post a parcel for a neighbour who finds it hard to go out.",g:"Initiative, trust"},
+ {t:"Shelter dog walker",c:"Animals",k:"short",h:2,w:"Animal shelter",d:"Walk dogs or play with cats at a local shelter. Many ask for a regular slot and a short induction.",g:"Responsibility, calm under pressure"},
+ {t:"Supplies drive",c:"Animals",k:"short",h:3,w:"On campus",d:"Set up a donation box for blankets, food and towels, then deliver everything to a shelter.",g:"Promotion, logistics"},
+ {t:"Food bank sorting shift",c:"Food",k:"short",h:3,w:"Local",d:"Sort and pack donated food. It's practical, social and needed every week.",g:"Teamwork, efficiency"},
+ {t:"Cook-and-share evening",c:"Food",k:"long",h:5,w:"Community kitchen",d:"Cook a big meal with friends and share it with people who'd otherwise eat alone.",g:"Budgeting, hosting"},
+ {t:"Leftover rescue round",c:"Food",k:"regular",h:1,w:"Local",d:"Collect unsold bread or fruit from shops that agree, and drop it at a shelter or fridge scheme.",g:"Reliability, negotiation"},
+ {t:"Translate for a charity",c:"Online & skills",k:"short",h:2,w:"From home",d:"If you speak two languages, offer to translate leaflets or web pages for a local non-profit.",g:"Writing, precision"},
+ {t:"Design a poster or logo",c:"Online & skills",k:"short",h:3,w:"From home",d:"Small charities rarely have a designer. Offer to make a poster, social post or simple logo.",g:"Design, working to a brief"},
+ {t:"Online tutor",c:"Online & skills",k:"regular",h:1,w:"From home",d:"Tutor a younger student over video once a week in the subject you're strongest at.",g:"Teaching, time management"}
+];
+var time="all",cause="All causes",plan={};
+
+function chips(id,items,get,cls,cb){
+  var box=document.getElementById(id);
+  items.forEach(function(it){
+    var b=document.createElement("button");b.type="button";b.className="chip "+cls;
+    b.textContent=it.l||it;b.setAttribute("aria-pressed",get(it));
+    b.onclick=function(){cb(it);[].forEach.call(box.children,function(x,i){x.setAttribute("aria-pressed",get(items[i]))});render()};
+    box.appendChild(b);
+  });
+}
+chips("time-chips",TIMES,function(t){return String(time===t.k)},"",function(t){time=t.k});
+chips("cause-chips",CAUSES,function(c){return String(cause===c)},"sm",function(c){cause=c});
+
+function syncChips(){
+  [].forEach.call(document.querySelectorAll("#time-chips .chip"),function(b,i){b.setAttribute("aria-pressed",String(TIMES[i].k===time))});
+  [].forEach.call(document.querySelectorAll("#cause-chips .chip"),function(b,i){b.setAttribute("aria-pressed",String(CAUSES[i]===cause))});
+}
+var menu=document.getElementById("menu"),burger=document.getElementById("burger"),ddBtn=document.getElementById("dd-btn"),ddList=document.getElementById("dd-list");
+function closeMenus(){ddList.hidden=true;ddBtn.setAttribute("aria-expanded","false");menu.classList.remove("open");burger.setAttribute("aria-expanded","false")}
+burger.onclick=function(){var o=!menu.classList.contains("open");menu.classList.toggle("open",o);burger.setAttribute("aria-expanded",String(o))};
+ddBtn.onclick=function(e){e.stopPropagation();var o=ddList.hidden;ddList.hidden=!o;ddBtn.setAttribute("aria-expanded",String(o))};
+document.addEventListener("click",function(e){if(!e.target.closest(".dd"))ddList.hidden=true;ddBtn.setAttribute("aria-expanded",String(!ddList.hidden))});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeMenus();ddBtn.focus()}});
+[].forEach.call(menu.querySelectorAll("a"),function(a){a.addEventListener("click",closeMenus)});
+CAUSES.forEach(function(c){
+  var li=document.createElement("li"),b=document.createElement("button"),n=IDEAS.filter(function(i){return c==="All causes"||i.c===c}).length;
+  b.type="button";b.innerHTML="<span></span><small>"+n+"</small>";b.firstChild.textContent=c;
+  b.onclick=function(){cause=c;render();closeMenus();document.getElementById("ideas").scrollIntoView()};
+  li.appendChild(b);ddList.appendChild(li);
+});
+document.getElementById("theme").onclick=function(){
+  var r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+  r.dataset.theme=dark?"light":"dark";
+};
+if("IntersectionObserver" in window){
+  var links={};[].forEach.call(menu.querySelectorAll("a[data-s]"),function(a){links[a.dataset.s]=a});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle("active",k===e.target.id)}})},{rootMargin:"-40% 0px -55% 0px"});
+  ["top","ideas","start","why"].forEach(function(id){io.observe(document.getElementById(id))});
+}
+
+function render(){
+  syncChips();
+  var g=document.getElementById("grid");g.innerHTML="";
+  var list=IDEAS.filter(function(i){return (time==="all"||i.k===time)&&(cause==="All causes"||i.c===cause)});
+  document.getElementById("count").textContent=list.length+(list.length===1?" idea":" ideas");
+  if(!list.length){var e=document.createElement("div");e.className="empty";e.textContent="Nothing matches that combination yet. Try 'Any amount' or 'All causes', or start your own below.";g.appendChild(e)}
+  list.forEach(function(i){
+    var a=document.createElement("article");a.className="card";a.style.setProperty("--tape",TIPCOL[i.c]);
+    var on=!!plan[i.t];
+    a.innerHTML='<div class="meta"><span></span><span></span><span></span></div><h3></h3><p></p><div class="gain"></div><button type="button" class="add"></button>';
+    var m=a.querySelectorAll(".meta span");m[0].textContent=i.c;m[1].textContent=i.h+(i.k==="regular"?" h / week":" h");m[2].textContent=i.w;
+    a.querySelector("h3").textContent=i.t;a.querySelector("p").textContent=i.d;
+    a.querySelector(".gain").textContent="You'll practise: "+i.g;
+    var b=a.querySelector(".add");b.textContent=on?"In my plan":"Add to my plan";b.setAttribute("aria-pressed",on);
+    b.onclick=function(){if(plan[i.t])delete plan[i.t];else plan[i.t]=i;render();renderPlan()};
+    g.appendChild(a);
+  });
+}
+function renderPlan(){
+  var keys=Object.keys(plan),p=document.getElementById("plan");
+  p.hidden=!keys.length;
+  document.getElementById("plan-n").textContent=keys.length;
+  document.getElementById("plan-hours").textContent=keys.reduce(function(s,k){return s+plan[k].h},0)+" h";
+  var ul=document.getElementById("plan-list");ul.innerHTML="";
+  keys.forEach(function(k){var li=document.createElement("li");li.textContent=k;ul.appendChild(li)});
+}
+document.getElementById("plan-clear").onclick=function(){plan={};render();renderPlan()};
+render();
+</script>
+</body>
+</html>
+
+</body></html>
